@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Dolomite illustration">
+  <rect width="640" height="420" fill="#efe8dc" />
+  <rect x="0" y="286" width="640" height="134" fill="#ddd4c4" />
+  <g fill="#c6baa6" stroke="#b2a48f" stroke-width="4">
+    <path d="M110 308 170 188l92 42 8 92-92 28Z" />
+    <path d="M254 314 328 170l102 38 10 96-102 34Z" />
+    <path d="M410 306 480 196l92 32 18 82-90 34Z" />
+  </g>
+  <text x="40" y="64" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#123930">Dolomite</text>
+  <text x="40" y="104" font-family="Arial, sans-serif" font-size="20" fill="#5b665f">Industrial dolomite placeholder visual</text>
+</svg>

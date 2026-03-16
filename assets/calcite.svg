@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Calcite illustration">
+  <rect width="640" height="420" fill="#edf2ee" />
+  <rect x="0" y="290" width="640" height="130" fill="#d8e1da" />
+  <g fill="#fbfcfa" stroke="#c9d7ce" stroke-width="4">
+    <path d="M132 320 196 178l88 36 18 92-92 30Z" />
+    <path d="M286 316 356 168l96 30 22 102-98 28Z" />
+    <path d="M448 318 514 204l82 30 14 78-86 30Z" />
+  </g>
+  <text x="40" y="64" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#123930">Calcite</text>
+  <text x="40" y="104" font-family="Arial, sans-serif" font-size="20" fill="#5b665f">Industrial calcite placeholder visual</text>
+</svg>

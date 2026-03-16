@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Packaging visual placeholder">
+  <rect width="640" height="480" fill="#ecf2ef" />
+  <rect x="90" y="146" width="134" height="204" rx="18" fill="#ffffff" stroke="#bad0c8" stroke-width="5" />
+  <rect x="252" y="116" width="136" height="234" rx="18" fill="#ffffff" stroke="#bad0c8" stroke-width="5" />
+  <rect x="416" y="168" width="136" height="182" rx="18" fill="#ffffff" stroke="#bad0c8" stroke-width="5" />
+  <path d="M128 196h56M128 226h56M128 256h56M286 176h70M286 212h70M286 248h70M450 210h68M450 242h68" stroke="#d98e2f" stroke-width="7" stroke-linecap="round" opacity="0.7" />
+  <text x="54" y="80" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#173e35">Packaging Placeholder</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Factory visual placeholder">
+  <rect width="900" height="560" fill="#e6ede5" />
+  <rect x="72" y="280" width="756" height="170" rx="20" fill="#173e35" />
+  <rect x="122" y="192" width="108" height="112" rx="14" fill="#2d6657" />
+  <rect x="270" y="162" width="132" height="142" rx="14" fill="#2d6657" />
+  <rect x="446" y="128" width="140" height="176" rx="14" fill="#2d6657" />
+  <rect x="628" y="176" width="112" height="128" rx="14" fill="#2d6657" />
+  <circle cx="726" cy="102" r="56" fill="#d98e2f" opacity="0.28" />
+  <text x="72" y="504" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#173e35">Factory Placeholder</text>
+</svg>

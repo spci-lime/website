@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Quick lime stone illustration">
+  <rect width="640" height="420" fill="#efe6d6" />
+  <rect x="0" y="276" width="640" height="144" fill="#d7cfbf" />
+  <g fill="#f8f5ee" stroke="#c2b8a0" stroke-width="4">
+    <path d="M108 280 166 188l92 30 22 80-74 44Z" />
+    <path d="M248 302 320 168l108 24 16 98-84 42Z" />
+    <path d="M404 304 470 208l88 24 22 72-80 40Z" />
+  </g>
+  <text x="40" y="64" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#123930">Quick Lime Stone</text>
+  <text x="40" y="104" font-family="Arial, sans-serif" font-size="20" fill="#5b665f">Bulk industrial supply placeholder visual</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" role="img" aria-label="Industrial mineral supply illustration">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7efe0" />
+      <stop offset="100%" stop-color="#dbe7de" />
+    </linearGradient>
+    <linearGradient id="plant" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d4e42" />
+      <stop offset="100%" stop-color="#0f3029" />
+    </linearGradient>
+  </defs>
+  <rect width="760" height="860" rx="44" fill="url(#bg)" />
+  <circle cx="610" cy="150" r="92" fill="#df9b46" opacity="0.2" />
+  <circle cx="150" cy="190" r="110" fill="#1d4e42" opacity="0.09" />
+  <rect x="80" y="520" width="600" height="180" rx="22" fill="#f8faf9" opacity="0.9" />
+  <rect x="92" y="388" width="160" height="200" rx="14" fill="url(#plant)" />
+  <rect x="270" y="324" width="172" height="264" rx="14" fill="url(#plant)" />
+  <rect x="468" y="260" width="192" height="328" rx="14" fill="url(#plant)" />
+  <rect x="126" y="290" width="40" height="112" rx="10" fill="#7aa897" />
+  <rect x="332" y="220" width="44" height="124" rx="10" fill="#7aa897" />
+  <rect x="546" y="166" width="46" height="124" rx="10" fill="#7aa897" />
+  <path d="M134 292c0-28 42-28 42 0 0 14-10 20-21 20s-21-6-21-20Z" fill="#ece9df" opacity="0.7" />
+  <path d="M340 224c0-28 42-28 42 0 0 14-10 20-21 20s-21-6-21-20Z" fill="#ece9df" opacity="0.7" />
+  <path d="M554 170c0-28 42-28 42 0 0 14-10 20-21 20s-21-6-21-20Z" fill="#ece9df" opacity="0.7" />
+  <rect x="116" y="618" width="164" height="36" rx="18" fill="#d98e2f" opacity="0.84" />
+  <rect x="300" y="618" width="146" height="36" rx="18" fill="#1d4e42" opacity="0.78" />
+  <rect x="464" y="618" width="122" height="36" rx="18" fill="#d0ddd5" />
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="154" cy="730" r="34" />
+    <circle cx="260" cy="730" r="34" />
+    <circle cx="366" cy="730" r="34" />
+    <circle cx="472" cy="730" r="34" />
+    <circle cx="578" cy="730" r="34" />
+  </g>
+</svg>

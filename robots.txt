@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spcilime.netlify.app/sitemap.xml
