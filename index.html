@@ -468,7 +468,7 @@
 
             <label>
               Name
-              <input type="text" name="name" placeholder="Your name" required />
+              <input id="name-field" type="text" name="name" placeholder="Your name" required />
             </label>
 
             <label>
@@ -480,14 +480,14 @@
                 placeholder="+91 XXXXX XXXXX"
                 inputmode="tel"
                 pattern="^(\+91[\-\s]?)?[6-9]\d{9}$"
-                title="Enter a valid 10-digit Indian mobile number, with optional +91 prefix."
+                title="Enter a valid 10-digit Indian mobile number, or +91 followed by 10 digits."
                 required
               />
             </label>
 
             <label>
               Email Address (Optional)
-              <input type="email" name="email" placeholder="you@example.com" />
+              <input id="email-field" type="email" name="email" placeholder="you@example.com" />
             </label>
 
             <label>

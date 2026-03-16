@@ -4,7 +4,9 @@ const productField = document.querySelector("#product-field");
 const inquiryTriggers = document.querySelectorAll(".inquiry-trigger");
 const yearTarget = document.querySelector("#year");
 const inquiryForm = document.querySelector("#inquiry-form");
+const nameField = document.querySelector("#name-field");
 const phoneField = document.querySelector("#phone-field");
+const emailField = document.querySelector("#email-field");
 const phoneError = document.querySelector("#phone-error");
 const formSuccess = document.querySelector("#form-success");
 
@@ -52,30 +54,52 @@ inquiryTriggers.forEach((button) => {
   });
 });
 
-if (inquiryForm && phoneField && phoneError && formSuccess) {
-  const phonePattern = /^(\+91[-\s]?)?[6-9]\d{9}$/;
+if (inquiryForm && nameField && phoneField && emailField && phoneError && formSuccess) {
+  const phonePattern = /^(?:[6-9]\d{9}|\+91[\s-]?[6-9]\d{9})$/;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   inquiryForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    const trimmedName = nameField.value.trim();
     const normalizedPhone = phoneField.value.replace(/\s+/g, "").trim();
+    const trimmedEmail = emailField.value.trim();
+
+    if (!trimmedName) {
+      phoneError.textContent = "Please enter your name.";
+      formSuccess.classList.add("hidden");
+      nameField.setAttribute("aria-invalid", "true");
+      nameField.focus();
+      return;
+    }
 
     if (!phonePattern.test(normalizedPhone)) {
-      phoneError.textContent = "Please enter a valid 10-digit Indian mobile number.";
+      phoneError.textContent = "Please enter a valid 10-digit Indian mobile number, or +91 followed by 10 digits.";
       formSuccess.classList.add("hidden");
       phoneField.setAttribute("aria-invalid", "true");
       phoneField.focus();
       return;
     }
 
+    if (trimmedEmail && !emailPattern.test(trimmedEmail)) {
+      phoneError.textContent = "Please enter a valid email address.";
+      formSuccess.classList.add("hidden");
+      emailField.setAttribute("aria-invalid", "true");
+      emailField.focus();
+      return;
+    }
+
     phoneError.textContent = "";
+    formSuccess.classList.add("hidden");
+    nameField.removeAttribute("aria-invalid");
     phoneField.removeAttribute("aria-invalid");
+    emailField.removeAttribute("aria-invalid");
 
     const formData = new FormData(inquiryForm);
     const payload = new URLSearchParams();
-    payload.append(GOOGLE_FORM_FIELDS.name, formData.get("name") || "");
+    payload.append(GOOGLE_FORM_FIELDS.name, trimmedName);
     payload.append(GOOGLE_FORM_FIELDS.phone, normalizedPhone);
-    payload.append(GOOGLE_FORM_FIELDS.email, formData.get("email") || "");
+    payload.append(GOOGLE_FORM_FIELDS.email, trimmedEmail);
     payload.append(GOOGLE_FORM_FIELDS.product, formData.get("product") || "");
     payload.append(GOOGLE_FORM_FIELDS.quantity, formData.get("quantity") || "");
     payload.append(GOOGLE_FORM_FIELDS.message, formData.get("message") || "");
@@ -111,8 +135,10 @@ if (inquiryForm && phoneField && phoneError && formSuccess) {
     }
   });
 
-  phoneField.addEventListener("input", () => {
-    phoneError.textContent = "";
-    phoneField.removeAttribute("aria-invalid");
+  [nameField, phoneField, emailField].forEach((field) => {
+    field.addEventListener("input", () => {
+      phoneError.textContent = "";
+      field.removeAttribute("aria-invalid");
+    });
   });
 }
