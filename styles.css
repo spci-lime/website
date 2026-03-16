@@ -891,8 +891,7 @@ textarea {
   }
 
   .floating-whatsapp {
-    right: 1rem;
-    bottom: 6.25rem;
+    display: none;
   }
 
   .mobile-contact-bar {
